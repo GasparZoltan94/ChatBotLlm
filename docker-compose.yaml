@@ -1,0 +1,13 @@
+services:
+  chatbot:
+    build:
+      context: ./src
+      args:
+        WORKDIR: ./src
+    environment:
+      - PYTHONDONTWRITEBYTECODE=1
+      - PYTHONUNBUFFERED=1
+      - OLLAMA_API_KEY=${OLLAMA_API_KEY}
+      - MODEL_NAME=${MODEL_NAME}
+    volumes:
+      - ./src:./src
