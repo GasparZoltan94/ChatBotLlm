@@ -1,3 +1,4 @@
 langgraph
-langgraph_core
+langchain_core
 langchain_ollama
+dotenv

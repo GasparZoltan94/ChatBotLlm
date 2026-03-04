@@ -10,4 +10,6 @@ services:
       - OLLAMA_API_KEY=${OLLAMA_API_KEY}
       - MODEL_NAME=${MODEL_NAME}
     volumes:
-      - ./src:./src
+      - ./src:/src
+    tty: true
+    stdin_open: true
